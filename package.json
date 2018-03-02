@@ -1,0 +1,19 @@
+{
+  "name": "image-search-abstraction",
+  "version": "1.0.0",
+  "description": "Image search api with pagination and recent results lookup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myniztan/image-search-abstraction.git"
+  },
+  "author": "Adam Risberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myniztan/image-search-abstraction/issues"
+  },
+  "homepage": "https://github.com/myniztan/image-search-abstraction#readme"
+}
