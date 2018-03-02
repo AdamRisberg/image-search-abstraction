@@ -4,7 +4,7 @@
   "description": "Image search api with pagination and recent results lookup.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/myniztan/image-search-abstraction/issues"
   },
-  "homepage": "https://github.com/myniztan/image-search-abstraction#readme"
+  "homepage": "https://github.com/myniztan/image-search-abstraction#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7"
+  }
 }
