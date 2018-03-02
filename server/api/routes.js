@@ -1,11 +1,7 @@
 var router = require("express").Router();
+var controller = require("./controller");
 
-router.get("/imagesearch/:term", function(req, res) {
-  res.send("SEARCH ROUTE");
-});
-
-router.get("/latest/imagesearch", function(req, res) {
-  res.send("LATEST ROUTE");
-});
+router.get("/imagesearch/:term", controller.search);
+router.get("/latest/imagesearch", controller.latest);
 
 module.exports = router;

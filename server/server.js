@@ -5,7 +5,7 @@ var app = express();
 var mongoUrl = process.env.DATABASEURL || "mongodb://localhost/image_search";
 
 mongoose.Promise = global.Promise;
-mongoose.listen(mongoUrl)
+mongoose.connect(mongoUrl)
   .catch(function (err) {
     console.log(err.message);
   });

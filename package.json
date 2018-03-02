@@ -18,6 +18,7 @@
   "homepage": "https://github.com/myniztan/image-search-abstraction#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "google-images": "^2.1.0",
     "mongoose": "^5.0.7"
   }
 }
