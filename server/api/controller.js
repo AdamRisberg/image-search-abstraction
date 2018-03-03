@@ -30,7 +30,7 @@ function latest(req, res, next) {
     .limit(10)
     .exec()
     .then(function(searches) {
-      res.json(searches);
+      res.json(filterLatestResults(searches));
     })
     .catch(function(err) {
       next(err);
@@ -44,6 +44,15 @@ function filterResults(results) {
       snippet: image.description,
       thumbnail: image.thumbnail.url,
       context: image.parentPage
+    };
+  });
+}
+
+function filterLatestResults(results) {
+  return results.map(function(search) {
+    return {
+      search_term: search.search_term,
+      when: search.when
     };
   });
 }
